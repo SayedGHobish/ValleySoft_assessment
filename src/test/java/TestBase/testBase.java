@@ -11,14 +11,14 @@ import java.time.Duration;
 
 public class testBase {
     public static WebDriver driver;
-//
-//    @BeforeClass()
-//    public void setUp()
-//    {
-//        driver = new FirefoxDriver();
-//        driver.manage().window().maximize();
-//        driver.get("https://demo.nopcommerce.com/");
-//    }
+
+    @BeforeClass()
+    public void setUp()
+    {
+        driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        driver.get("https://demo.nopcommerce.com/");
+    }
 
     @AfterClass
     public void tearDown()
